@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComicCraft - AI Comic Story Creator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎨 ComicCraft</h1>
+        <h2>AI Comic Story Creator</h2>
+
+        <form action="/generate" method="post">
+
+            <label for="story_prompt">Enter Your Story Idea</label>
+
+            <textarea
+                id="story_prompt"
+                name="story_prompt"
+                placeholder="Example: A student discovers a magical book..."
+                required></textarea>
+
+            <button type="submit">
+                Generate Comic
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

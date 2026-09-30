@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comic Preview - ComicCraft</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎨 Comic Preview</h1>
+
+        {% for panel in layout %}
+
+        <div class="panel">
+
+            <h2>Panel {{ panel.panel }} - {{ panel.title }}</h2>
+
+            <div class="image-box">
+                🖼️
+                <p>AI Generated Image</p>
+            </div>
+
+            <p><i>{{ panel.scene }}</i></p>
+
+            <p>
+                <strong>Caption:</strong>
+                {{ panel.caption }}
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+        <a href="/">
+            <button>Create Another Comic</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
